@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<title>COROS UNLOCKED — App Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="logo" href="#">COROS <b>UNLOCKED</b></a><nav><a href="#store">Mini-apps</a><a href="#creator">Watch Creator</a><a href="#lab">Watch Lab</a></nav><span class="badge">PACE 4 · LAB V0.1</span></header>
+<main>
+<section class="hero">
+<div><p class="eyebrow">PROJET COMMUNAUTAIRE · VERSION 0.1</p><h1>Ta montre.<br><em>De nouvelles possibilités.</em></h1>
+<p class="lead">Un laboratoire pour imaginer et tester des outils autour de la COROS PACE 4. On commence par des mini-apps web et des cadrans personnalisés, puis on étudie les possibilités techniques réelles de la montre.</p>
+<a class="button" href="#store">Explorer les mini-apps ↓</a>
+<p class="warning"><b>Transparence :</b> cette version ne transfère pas d'applications dans la montre. Les mini-apps fonctionnent dans ton navigateur.</p></div>
+<div class="watch"><div class="strap"></div><div class="face"><small>COROS <span>● GPS</span></small><strong id="clock">10:08</strong><small id="date">PACE 4</small><div class="stats"><span><b>72</b><small>BPM</small></span><span><b>8 426</b><small>PAS</small></span></div><small>UNLOCKED</small></div><div class="strap lower"></div></div>
+</section>
+<section id="store" class="section"><div class="section-title"><div><p class="eyebrow">01 / MINI-APPS</p><h2>App Store</h2><p>Quatre outils utilisables immédiatement sur ce site.</p></div><span class="badge">4 MINI-APPS</span></div>
+<div class="grid">
+<article><div class="icon purple">⌗</div><small>OUTIL · FONCTIONNELLE</small><h3>Calculatrice</h3><p>Effectue des calculs simples et rapides.</p><button data-app="calc">Ouvrir ↗</button></article>
+<article><div class="icon green">ϟ</div><small>SPORT · FONCTIONNELLE</small><h3>Chronomètre</h3><p>Lance, mets en pause et enregistre des tours.</p><button data-app="timer">Ouvrir ↗</button></article>
+<article><div class="icon orange">◉</div><small>JEU · FONCTIONNEL</small><h3>Snake</h3><p>Un mini-jeu jouable avec les flèches du clavier.</p><button data-app="snake">Jouer ↗</button></article>
+<article><div class="icon blue">⇄</div><small>OUTIL · FONCTIONNEL</small><h3>Convertisseur</h3><p>Convertis km/h, m/s, kilomètres et mètres.</p><button data-app="convert">Ouvrir ↗</button></article>
+</div></section>
+<section id="creator" class="section"><div class="section-title"><div><p class="eyebrow">02 / PERSONNALISATION</p><h2>Watch Creator</h2><p>Crée un aperçu de cadran et télécharge-le en PNG.</p></div><span class="badge">APERÇU UNIQUEMENT</span></div>
+<div class="creator"><div class="controls"><label>Couleur d'accent <input type="color" id="color" value="#8b7cff"></label><label>Nom affiché <input id="label" maxlength="14" value="PACE 4"></label><label>Style <select id="style"><option>Digital</option><option>Minimal</option><option>Sport</option></select></label><button class="button" id="download">Télécharger l'aperçu PNG</button><p class="muted">Le PNG est une maquette visuelle, pas un fichier de cadran COROS installable.</p></div><canvas id="canvas" width="360" height="440"></canvas></div></section>
+<section id="lab" class="section"><div class="section-title"><div><p class="eyebrow">03 / RECHERCHE TECHNIQUE</p><h2>Watch Lab</h2><p>La feuille de route pour tenter d'aller plus loin.</p></div><span class="badge">OBJECTIF : APP EMBARQUÉE</span></div>
+<div class="roadmap"><article><b>01</b><div><h3>Étudier les cadrans</h3><p>Comprendre les formats et les outils communautaires.</p><small>À EXPLORER</small></div></article><article><b>02</b><div><h3>Étudier les transferts</h3><p>Comprendre comment les cadrans sont transférés et quelles protections existent.</p><small>RECHERCHE</small></div></article><article><b>03</b><div><h3>Explorer le système</h3><p>Vérifier s'il existe un environnement d'exécution ou une méthode documentée pour ajouter du code.</p><small>NON CONFIRMÉ</small></div></article><article><b>04</b><div><h3>Prototype embarqué</h3><p>À tenter uniquement si une méthode fiable et compatible PACE 4 est démontrée.</p><small>À VENIR</small></div></article></div>
+<div class="callout"><b>Important</b><p>La PACE 4 n'est pas une montre Wear OS. Une page web, un cadran ou l'API de données COROS ne suffisent pas à installer une application interactive dans son système. On ne prétendra jamais qu'une installation a réussi sans l'avoir vérifiée sur la montre.</p></div>
+</section>
+</main><footer><span>© 2026 COROS UNLOCKED · Projet indépendant</span><span>Non affilié à COROS.</span></footer>
+<div class="modal hidden" id="modal"><div class="dialog"><div class="modalhead"><h2 id="modalTitle">Mini-app</h2><button id="close" aria-label="Fermer">×</button></div><div id="app"></div></div></div>
+<script src="app.js"></script>
+</body></html>
